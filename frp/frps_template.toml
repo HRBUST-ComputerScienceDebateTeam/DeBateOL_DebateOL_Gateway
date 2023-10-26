@@ -1,0 +1,15 @@
+# frps.toml
+bindPort = 7000         # [必选] 绑定端口, 客户端与该端口建立连接
+log.to = "console"      # [可选] 日志配置, 通过打印的方式输出日志
+vhostHTTPPort = 7100    # [可选] http 代理需要, 当访问该端口时就转到对应本地 frpc 代理
+vhostHTTPSPort = 7200   # [可选] https 代理需要, 当访问该端口时就转到对应本地 frpc 代理
+
+# 身份验证
+auth.method = "token"   # [可选] 身份验证方式
+auth.token = "123456" # [可选] token 设置, 只有客服端设置了相同 token 才能身份校验通过, 其实就是密码
+
+# 下面是服务端仪表板配置
+webServer.port = 7500        # 端口设置
+webServer.addr = "0.0.0.0"   # IP 设置
+webServer.user = "admin"     # 仪表盘用户名设置
+webServer.password = "admin" # 仪表盘用户密码设置
