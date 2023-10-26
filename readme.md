@@ -1,4 +1,4 @@
-# DeBateOL_DebateOL_Gateway
+# DeBateOL_Gateway
 
 DebateOL的网关
 
