@@ -1,2 +1,0 @@
-# DeBateOL_DebateOL_Gateway
-DebateOL的网关
